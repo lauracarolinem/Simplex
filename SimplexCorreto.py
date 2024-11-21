@@ -277,28 +277,28 @@ def controlador_simplex(A, b, cT):
         index_basicas[index_basicas.index(sai)] = entra
         index_nao_basicas[index_nao_basicas.index(entra)] = sai
 
-
-A = [
-    [1, 1, 1],
-    [0, 1, 2],
-    [-1, 2, 2]
-]
-
-b = [6, 8, 4]
-cT = [-2, -10, -8]
-
-controlador_simplex(A, b, cT)
-
+#NAO DEU
 # A = [
-#     [400,300],
-#     [300,400],
-#     [200,500]
+#     [1, 1, 1],
+#     [0, 1, 2],
+#     [-1, 2, 2]
 # ]
 
-# b = [25000,27000,30000]
-# cT = [-20000,-25000]
+# b = [6, 8, 4]
+# cT = [-2, -10, -8]
 
 # controlador_simplex(A, b, cT)
+
+A = [
+    [400,300],
+    [300,400],
+    [200,500]
+]
+
+b = [25000,27000,30000]
+cT = [-20000,-25000]
+
+controlador_simplex(A, b, cT)
 # A = [
 #     [2, 1],
 #     [1, 1]
